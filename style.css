@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+}
+
+
+.box {
+    display: flex;
+    gap: 20px;
+    transition: opacity 0.6s ease;
+}
+.box > div{
+    height: 60px;
+    width: 60px;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+
+
+
+.box {
+    transition: opacity 0.6s ease;
+  }
+  
+  /*.box:hover div {
+    opacity: 0.4;
+  } */
+
+  .box:hover > :not(:hover) {
+    opacity: 0.4;} 
